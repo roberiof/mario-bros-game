@@ -18,7 +18,7 @@ Pontos a Melhorar:
 - Adicionar novas funcionalidades no jogo. ;
 - Melhorar cada vez mais o inglês;
 
-<a href="https://roberiof.github.io/mario-bros-game/index.html"> Jogar </a>
+<a href="https://roberiof.github.io/mario-bros-game/mario-game/index.html"> Jogar </a>
 
 <hr>
 
@@ -40,5 +40,5 @@ Points to Improve:
 - Add news features to the game;
 - Improve more and more english;
 
-<a href="https://roberiof.github.io/mario-bros-game/index.html"> Play Game </a>
+<a href="https://roberiof.github.io/mario-bros-game/mario-game/index.html"> Play Game </a>
 
