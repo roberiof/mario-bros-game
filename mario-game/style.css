@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+body{
+    background-color: lightgreen;
+    overflow: hidden;
+}
+
+.start-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    font-weight: bolder;
+    background-color: lightgreen;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    box-shadow: 3px 5px 12px 1px black;
+}
+
+.score-up{
+    box-shadow: 3px 5px 12px 1px black;
+    font-weight: bolder;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    max-width: 300px ;
+}
+
+.game-board{
+    border-bottom: 20px solid rgb(7, 119, 7) ;
+    margin: 6%  auto;
+    width: 80%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb , #e0f6ff);
+}
+
+.clouds{
+    position: absolute;
+    width: 400px;
+    right: -400px;
+    /* animation: clouds-animation 8s infinite linear; */
+}
+
+@keyframes clouds-animation {
+    from{
+        right: -400px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.pipe{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+    /* animation: pipe_animation 1.5s infinite linear; */
+    /* linear ---- const velocity */
+}
+
+@keyframes pipe_animation {
+    from{
+        right: -80px;
+        /* this number choice is the object width */
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump{
+    animation: mario_animation .8s ease-out ;
+}
+
+@keyframes mario_animation {
+    0%{
+        bottom: 0;
+    }
+    45%{
+        bottom: 150px;
+    }
+    50%{
+        bottom: 150px;
+    }
+    55%{
+        bottom: 150px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+
+.game-over{
+    display: none;
+    border-radius: 10px ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 30;
+    background:  linear-gradient(lightgreen , rgb(7, 119, 7) );
+    padding: 30px;
+    width: 70%;
+    box-shadow: 3px 5px 12px 1px black;
+    transition: all 1s;
+}
+
+.try-again-btn{
+    box-shadow: 3px 5px 12px 1px black;
+    cursor: pointer;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    color: black;
+    background-color: lightgreen;
+}
+
+.scores-group{
+    display: flex;
+    gap: 10px;
+}
+
+.div-score-game-over , .div-best-score{
+    min-width: 130px;
+    max-width: 300px;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.score-game-over , .best-score{
+    font-weight: bolder;
+    margin-block: 10px ;
+    max-width: 270px;
+    overflow: hidden;
+}
+
+.notice{
+    display: none;
+    border-radius: 10px ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 30;
+    z-index: 30;
+    background:  linear-gradient(lightcoral , red );
+    padding: 30px;
+    width: 90%;
+    box-shadow: 3px 5px 12px 1px black;
+    transition: all 1s;
+    font-weight: bolder;
+    text-align: center;
+}
+
+@media (max-width: 460px ){
+  .notice{
+    display: flex; 
+  }   
+}
