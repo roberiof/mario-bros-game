@@ -10,7 +10,7 @@ Principais Aprendizados:
 - Pegar propriedades do CSS pelo JS: offSet e window.getComputedStyle();
 <br>
 Pontos a Melhorar:
--  Organizar melhor o código JS 
+- Organizar melhor o código JS 
 - Adicionar novas funcionalidades no jogo. 
 - Melhorar cada vez mais o inglês
 
