@@ -10,11 +10,11 @@ Principais Aprendizados:
 - Pegar propriedades do CSS pelo JS: offSet e window.getComputedStyle();
 <br>
 Pontos a Melhorar:
-- Organizar melhor o código JS 
-- Adicionar novas funcionalidades no jogo. 
-- Melhorar cada vez mais o inglês
+- Organizar melhor o código JS ;
+- Adicionar novas funcionalidades no jogo. ;
+- Melhorar cada vez mais o inglês;
 
-<a ref="https://roberiof.github.io/mario-bros-game/index.html"> Jogar </a>
+<a href="https://roberiof.github.io/mario-bros-game/index.html"> Jogar </a>
 
 <hr>
 
@@ -28,9 +28,9 @@ Main Learnings:
 - Get CSS proprieties through: offSet e window.getComputedStyle();
 <br>
 Points to Improve:
-- Better organize JS code
-- Add news features to the game 
-- Improve more and more english
+- Better organize JS cod;
+- Add news features to the game;
+- Improve more and more english;
 
 <a href="https://roberiof.github.io/mario-bros-game/index.html"> Play Game </a>
 
