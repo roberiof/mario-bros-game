@@ -26,12 +26,13 @@ const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
 const clouds = document.querySelector('.clouds')
 const game_over =  document.querySelector('.game-over')
+const game_board = document.querySelector('.game-board')
 
 const jump = () =>{
     mario.classList.add('jump')
     setTimeout( () =>{
         mario.classList.remove('jump')
-    }, 800)
+    }, 850)
 }
 
 // the guy below checks with every 10 milliseconds if you lost the game 
@@ -47,6 +48,12 @@ const loop = setInterval(() => {
 
 document.addEventListener('keydown' , (e) =>{
     if(e.key === ' '){
+        jump()
+    }
+})
+
+game_board.addEventListener('click', ({target}) =>{
+    if(target.innerText !== "START"){
         jump()
     }
 })
